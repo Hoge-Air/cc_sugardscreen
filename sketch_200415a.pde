@@ -16,7 +16,7 @@ void draw()
   if (pos.x <=0) {
     directionX = 1;
     print(pos.x='\n');
-  }else if (pos.x= width) {
+  }else if (pos.x>= width) {
    directionX = -1;
    print(pos.x='\n');
   }
@@ -29,6 +29,6 @@ void draw()
   }
   pos.x -= directionX;
   pos.y =- directionY;
-  fill(o, 0, 255);
+  fill(0, 0, 255);
   ellipse(pos.x, pos.y, 50, 50);
 }
