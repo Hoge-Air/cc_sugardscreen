@@ -1,8 +1,8 @@
 void setup()
 {
-  size(600, 600);
+  size(900, 700);
   background(100);
-  fill(255, 0, 0);
+  fill(0, 0, 0);
   ellipse(width/2, height/2, 50, 50);
 }
 
@@ -14,21 +14,36 @@ int directionY = 1;
 void draw()
 {
   if (pos.x <=0) {
-    directionX = 1;
-    print(pos.x='\n');
+    directionX = 2;
   }else if (pos.x>= width) {
    directionX = -1;
-   print(pos.x='\n');
   }
   if (pos.y <=0) {
     directionY = 1;
-    print(pos.y='\n');
   }else if (pos.y>= height) {
     directionY = -1;
-    print(pos.y='\n');
   }
-  pos.x -= directionX;
-  pos.y =- directionY;
-  fill(0, 0, 255);
+  pos.x += directionX;
+  pos.y += directionY;
+  fill(24, 82, 195);
+  background(100);
   ellipse(pos.x, pos.y, 50, 50);
  }
+ 
+class Ball
+{
+  PVector pos;
+  int size;
+  Ball(int _size)
+ {
+   pos = new PVector(width/2, height/2);
+   size = _size;
+ }
+
+ void display()
+ {
+  
+ }
+}
+
+Ball ball = new Ball(50);
