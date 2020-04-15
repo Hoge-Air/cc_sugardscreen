@@ -31,4 +31,4 @@ void draw()
   pos.y =- directionY;
   fill(0, 0, 255);
   ellipse(pos.x, pos.y, 50, 50);
-}
+ }
