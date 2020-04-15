@@ -15,6 +15,10 @@ void draw()
 }
 
 int y= 1;
+PVector pos = new PVector(0,0);
+int directionX = 1;
+int directionY = 1;
+
 
 
                 
